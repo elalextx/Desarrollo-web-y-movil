@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Power - Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5"> 
+        <h3>Carrito de compras</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio unitario</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jugo frambuesa<br><small>Promo aplicada: 10% OFF</small></td>
+                    <td>x1</td>
+                    <td>$5000</td>
+                    <td>$5000 -$500</td>
+                </tr>
+                <tr>
+                    <td>Smoothie plátano<br><small>Promo aplicada: 2x1</small></td>
+                    <td>x2</td>
+                    <td>$4000</td>
+                    <td>$8000 -$4000</td>
+                </tr>
+                
+                <!-- Filas que faltaban -->
+                <tr class="table-bordered">
+                    <td colspan="3" class="text-end"><strong>Total antes descuentos:</strong></td>
+                    <td><strong>$13000</strong></td>
+                </tr>
+                <tr class="table-bordered">
+                    <td colspan="3" class="text-end"><strong>Descuentos aplicados:</strong></td>
+                    <td><strong>-$4500</strong></td>
+                </tr>
+                <tr class="table-bordered">
+                    <td colspan="3" class="text-end"><strong>Total a pagar:</strong></td>
+                    <td><strong>$8500</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese código de promoción">
+                    <button class="btn btn-warning">Aplicar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="d-flex gap-2">
+            <button class="btn btn-secondary">Seguir comprando</button>
+            <button class="btn btn-primary">Finalizar compra</button>       
+        </div>
+    </div>
+</body>
+</html>
