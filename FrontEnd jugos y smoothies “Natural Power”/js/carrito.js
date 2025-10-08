@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const validos = ["DESC10", "ENVIOGRATIS"];
         if (validos.includes(codigo)) {
             alert("Código válido, se aplicó la promoción");
-            // Aquí podrías aplicar descuento real
         } else {
             alert("Código inválido");
         }
@@ -102,3 +101,4 @@ function confirmarCompra() {
     alert("Compra realizada con éxito");
     location.reload();
 }
+
